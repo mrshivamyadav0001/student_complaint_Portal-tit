@@ -1,0 +1,136 @@
+body{
+ margin:0;
+ font-family:'Segoe UI',sans-serif;
+ background:#f2f4f8;
+}
+
+/* AUTH */
+.auth-bg{
+ background:linear-gradient(120deg,#283c86,#45a247);
+ height:100vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}
+
+.auth-card{
+ background:white;
+ width:350px;
+ padding:25px;
+ border-radius:12px;
+ animation:pop 0.8s;
+}
+
+@keyframes pop{
+ from{transform:scale(0.8);opacity:0}
+ to{transform:scale(1);opacity:1}
+}
+
+input,textarea,select{
+ width:100%;
+ padding:10px;
+ margin:10px 0;
+}
+
+button{
+ background:#283c86;
+ color:white;
+ border:none;
+ padding:10px;
+ width:100%;
+ border-radius:6px;
+ cursor:pointer;
+}
+
+button:hover{background:#45a247}
+
+/* HEADER */
+.header{
+ background:#283c86;
+ color:white;
+ text-align:center;
+ padding:20px;
+}
+
+/* BANNER */
+.banner img{
+ width:100%;
+ height:280px;
+ object-fit:cover;
+ animation:fade 1.5s;
+}
+
+@keyframes fade{
+ from{opacity:0}
+ to{opacity:1}
+}
+
+/* CARDS */
+.cards{
+ display:flex;
+ justify-content:center;
+ gap:20px;
+ padding:30px;
+}
+
+.info-card{
+ background:white;
+ width:260px;
+ border-radius:12px;
+ overflow:hidden;
+ text-align:center;
+ box-shadow:0 10px 20px rgba(0,0,0,.1);
+ transition:.4s;
+}
+
+.info-card img{
+ width:100%;
+ height:150px;
+ object-fit:cover;
+}
+
+.info-card:hover{
+ transform:translateY(-10px);
+}
+
+/* CONTAINER */
+.container{
+ width:80%;
+ background:white;
+ margin:30px auto;
+ padding:20px;
+ border-radius:10px;
+}
+
+/* TABLE */
+table{
+ width:100%;
+ border-collapse:collapse;
+}
+
+th,td{
+ padding:10px;
+ border-bottom:1px solid #ddd;
+}
+
+.status-Pending{color:orange}
+.status-Resolved{color:green}
+
+/* THANK YOU */
+.thank-card{
+ width:350px;
+ margin:100px auto;
+ background:white;
+ padding:30px;
+ text-align:center;
+ border-radius:12px;
+ animation:pop 0.8s;
+}
+
+.logout{
+ display:block;
+ margin-top:20px;
+ color:red;
+ text-align:center;
+ text-decoration:none;
+}
